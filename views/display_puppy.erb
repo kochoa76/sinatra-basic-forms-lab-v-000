@@ -1,6 +1,8 @@
 <!DOCTYPE html>
   <html>
     <body>
-      <p> Puppy name: <%= @puppy %> </p> 
+    Puppy name: <% @puppy.each do |pup_info| %>
+                <%= |pup_info| %>
+                <%end%>
     </body>
   </html>
